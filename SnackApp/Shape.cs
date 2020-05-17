@@ -18,5 +18,24 @@ namespace SnackApp
             }
         }
 
+        public bool Collision(Shape shape)
+        {
+            foreach (var item in _points)
+            {
+                if (shape.ComparePoints(item))
+                    return true;
+            }
+            return false;
+        }
+
+        private bool ComparePoints(Point point)
+        {
+            foreach (var item in _points)
+            {
+                if (item.ComparePoints(point))
+                    return true;
+            }
+            return false;
+        }
     }
 }

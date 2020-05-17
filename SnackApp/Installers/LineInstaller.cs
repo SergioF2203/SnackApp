@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +31,19 @@ namespace SnackApp.Installers
             {
                 line.DrawLine();
             }
+        }
+
+        public bool Collision(Shape shape)
+        {
+            foreach (var item in _shapes)
+            {
+                if (item.Collision(shape))
+                {
+                    return true;
+                }
+            }
+            return false;
+
         }
     }
 }

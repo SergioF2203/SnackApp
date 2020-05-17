@@ -62,9 +62,9 @@ namespace SnackApp
             Console.WriteLine(_symbol);
         }
 
-        public bool ComparePoints(Point food)
+        public bool ComparePoints(Point point)
         {
-            return (food._left == _left && food._top == _top);
+            return (point._left == _left && point._top == _top);
         }
 
         //public static bool operator ==(Point point1, Point point2)
