@@ -3,13 +3,18 @@ using System.Threading;
 using SnackApp.Factory;
 using SnackApp.Helpers;
 using SnackApp.Installers;
+using SnackApp.UserServices;
 
 namespace SnackApp
 {
     public class GamePlay
     {
-        public void StartGame()
+        UserService userService = new UserService();
+        public void StartGame(User user)
         {
+            if (user == null)
+                user = new User();
+
             int score = 0;
 
             var lineInstallers = new LineInstaller();
@@ -37,6 +42,7 @@ namespace SnackApp
                     score++;
                     ScoreHelper.GetScore(score);
 
+
                     food = FoodFactory.GetRandomFood(70, 20, '+');
                     Console.ForegroundColor = ColorHelper.GetRandomColor(new Random().Next(1, 4));
                     food.DrawPoint();
@@ -52,6 +58,9 @@ namespace SnackApp
                     snake.PressKey(key.Key);
                 }
             }
+
+            user.Score = score;
+            userService.SaveScore(user);
         }
     }
 }

@@ -57,6 +57,9 @@
     <Compile Include="Shape.cs" />
     <Compile Include="Snake.cs" />
     <Compile Include="UI\UIService.cs" />
+    <Compile Include="UserServices\User.cs" />
+    <Compile Include="UserServices\UserInitialaizer.cs" />
+    <Compile Include="UserServices\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
