@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -59,12 +60,22 @@ namespace SnackApp
         {
             Console.SetCursorPosition(_left, _top);
             Console.WriteLine(_symbol);
-
         }
 
         public bool ComparePoints(Point food)
         {
             return (food._left == _left && food._top == _top);
         }
+
+        //public static bool operator ==(Point point1, Point point2)
+        //{
+        //    return (point1._left == point2._left && point1._top == point2._top);
+        //}
+
+        //public static bool operator !=(Point point1, Point point2)
+        //{
+        //    return (point1._left == point2._left || point1._top == point2._top);
+        //}
+
     }
 }

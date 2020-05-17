@@ -59,7 +59,7 @@ namespace SnackApp
             if (head.ComparePoints(food))
             {
                 food.Symbol = head.Symbol;
-                _points.Add(food);
+                _points.Add(head);
                 return true;
             }
 

@@ -13,7 +13,7 @@ namespace SnackApp.Lines
         {
             _points = new List<Point>();
 
-            for (int i = left; i < count; i++)
+            for (int i = top; i < count; i++)
             {
                 var point = new Point(left, i, symbol);
                 _points.Add(point);
