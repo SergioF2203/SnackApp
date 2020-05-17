@@ -8,6 +8,7 @@ using SnackApp.Factory;
 using SnackApp.Helpers;
 using SnackApp.Installers;
 using SnackApp.Lines;
+using SnackApp.UI;
 
 namespace SnackApp
 {
@@ -15,7 +16,15 @@ namespace SnackApp
     {
         static void Main(string[] args)
         {
+            var uiService = new UIService();
+            uiService.GetMenu();
 
+            while (true)
+            {
+                ConsoleKeyInfo key = Console.ReadKey();
+                uiService.GetCommand(key.Key);
+
+            }
         }
     }
 }

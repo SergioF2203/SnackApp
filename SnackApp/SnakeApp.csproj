@@ -56,12 +56,11 @@
     <Compile Include="ScoreHelper.cs" />
     <Compile Include="Shape.cs" />
     <Compile Include="Snake.cs" />
+    <Compile Include="UI\UIService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UI\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

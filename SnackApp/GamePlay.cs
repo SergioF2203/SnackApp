@@ -8,7 +8,7 @@ namespace SnackApp
 {
     public class GamePlay
     {
-        public static void StartGame()
+        public void StartGame()
         {
             int score = 0;
 
