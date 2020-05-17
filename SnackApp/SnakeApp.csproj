@@ -43,8 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\DirectionEnum.cs" />
+    <Compile Include="Factory\FoodFactory.cs" />
+    <Compile Include="Helpers\ColorHelper.cs" />
+    <Compile Include="Installers\LineInstaller.cs" />
+    <Compile Include="Lines\HorizontalLine.cs" />
+    <Compile Include="Lines\VerticalLine.cs" />
+    <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shape.cs" />
+    <Compile Include="Snake.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
