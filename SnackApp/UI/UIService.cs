@@ -28,6 +28,14 @@ namespace SnackApp.UI
             Console.WriteLine("             - Use arrows to move the snake                ");
             Console.SetCursorPosition(30, 14);
             Console.WriteLine("             - Press C to create the user                  ");
+            Console.SetCursorPosition(30, 15);
+            Console.WriteLine("             - Press S to get all scores                   ");
+            Console.SetCursorPosition(30, 16);
+            Console.WriteLine("             - Press ESC to quite the game                 ");
+            Console.SetCursorPosition(30, 17);
+            Console.WriteLine("||-------------------------------------------------------||");
+            Console.SetCursorPosition(30, 18);
+            Console.WriteLine("||=======================================================||");
 
         }
 
